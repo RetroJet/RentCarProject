@@ -10,10 +10,33 @@
 		7857FC1F2EB41CDD002FCFEE /* RentCarProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentCarProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7857FC6F2EB4FD30002FCFEE /* Exceptions for "RentCarProject" folder in "RentCarProject" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7857FC1E2EB41CDD002FCFEE /* RentCarProject */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7857FC212EB41CDD002FCFEE /* RentCarProject */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7857FC6F2EB4FD30002FCFEE /* Exceptions for "RentCarProject" folder in "RentCarProject" target */,
+			);
 			path = RentCarProject;
+			sourceTree = "<group>";
+		};
+		7857FC732EB513D2002FCFEE /* Main */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		78FA26EE2EB80CF800AE2CE3 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +55,9 @@
 		7857FC162EB41CDD002FCFEE = {
 			isa = PBXGroup;
 			children = (
+				78FA26EE2EB80CF800AE2CE3 /* Model */,
 				7857FC212EB41CDD002FCFEE /* RentCarProject */,
+				7857FC732EB513D2002FCFEE /* Main */,
 				7857FC202EB41CDD002FCFEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +87,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				7857FC212EB41CDD002FCFEE /* RentCarProject */,
+				7857FC732EB513D2002FCFEE /* Main */,
+				78FA26EE2EB80CF800AE2CE3 /* Model */,
 			);
 			name = RentCarProject;
 			packageProductDependencies = (
@@ -256,6 +283,7 @@
 				DEVELOPMENT_TEAM = 79NZFM7X3P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RentCarProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +316,7 @@
 				DEVELOPMENT_TEAM = 79NZFM7X3P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RentCarProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
