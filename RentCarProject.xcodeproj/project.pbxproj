@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		78147AA62ECF7EE600AA0939 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 78147AA52ECF7EE600AA0939 /* FirebaseCore */; };
+		78147AA82ECF7EE600AA0939 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 78147AA72ECF7EE600AA0939 /* FirebaseFirestore */; };
+		78147AAA2ECF7EE600AA0939 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 78147AA92ECF7EE600AA0939 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7857FC1F2EB41CDD002FCFEE /* RentCarProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentCarProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -34,11 +40,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		78FA26EE2EB80CF800AE2CE3 /* Model */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Model;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78147AA62ECF7EE600AA0939 /* FirebaseCore in Frameworks */,
+				78147AA82ECF7EE600AA0939 /* FirebaseFirestore in Frameworks */,
+				78147AAA2ECF7EE600AA0939 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +59,6 @@
 		7857FC162EB41CDD002FCFEE = {
 			isa = PBXGroup;
 			children = (
-				78FA26EE2EB80CF800AE2CE3 /* Model */,
 				7857FC212EB41CDD002FCFEE /* RentCarProject */,
 				7857FC732EB513D2002FCFEE /* Main */,
 				7857FC202EB41CDD002FCFEE /* Products */,
@@ -88,10 +91,12 @@
 			fileSystemSynchronizedGroups = (
 				7857FC212EB41CDD002FCFEE /* RentCarProject */,
 				7857FC732EB513D2002FCFEE /* Main */,
-				78FA26EE2EB80CF800AE2CE3 /* Model */,
 			);
 			name = RentCarProject;
 			packageProductDependencies = (
+				78147AA52ECF7EE600AA0939 /* FirebaseCore */,
+				78147AA72ECF7EE600AA0939 /* FirebaseFirestore */,
+				78147AA92ECF7EE600AA0939 /* FirebaseStorage */,
 			);
 			productName = RentCarProject;
 			productReference = 7857FC1F2EB41CDD002FCFEE /* RentCarProject.app */;
@@ -105,7 +110,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2600;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					7857FC1E2EB41CDD002FCFEE = {
 						CreatedOnToolsVersion = 26.0.1;
@@ -121,6 +126,9 @@
 			);
 			mainGroup = 7857FC162EB41CDD002FCFEE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				78147AA42ECF7EE600AA0939 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7857FC202EB41CDD002FCFEE /* Products */;
 			projectDirPath = "";
@@ -211,6 +219,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -268,6 +277,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -294,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Hitinov.RentCarProject;
+				PRODUCT_BUNDLE_IDENTIFIER = RentCarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -327,7 +337,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Hitinov.RentCarProject;
+				PRODUCT_BUNDLE_IDENTIFIER = RentCarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -361,6 +371,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78147AA42ECF7EE600AA0939 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78147AA52ECF7EE600AA0939 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78147AA42ECF7EE600AA0939 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		78147AA72ECF7EE600AA0939 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78147AA42ECF7EE600AA0939 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		78147AA92ECF7EE600AA0939 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78147AA42ECF7EE600AA0939 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7857FC172EB41CDD002FCFEE /* Project object */;
 }

@@ -16,6 +16,7 @@ enum Montserrat: String {
     case semiBold = "Montserrat-SemiBold"
     case bold = "Montserrat-Bold"
     case medium = "Montserrat-Medium"
+    case regular = "Poppins-Regular"
 }
 
 enum Poppins: String {
@@ -29,3 +30,7 @@ enum PinyonScript: String {
     case regular = "PinyonScript"
 }
 
+enum Inter: String {
+    case medium = "Inter-Medium"
+    case regular = "Inter-Regular"
+}
